@@ -1,0 +1,15 @@
+EXAMPLES
+The point of this helper is to reduce the number of times you must type your username or password. For example:
+$ git config credential.helper store
+$ git push http://example.com/repo.git
+Username: <type your username>
+Password: <type your password>
+
+[several days later]
+$ git push http://example.com/repo.git
+[your credentials are used automatically]
+
+STORAGE FORMAT
+The .git-credentials file is stored in plaintext. Each credential is stored on its own line as a URL like:
+
+https://user:pass@example.com
